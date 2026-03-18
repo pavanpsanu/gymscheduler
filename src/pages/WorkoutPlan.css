@@ -1,0 +1,81 @@
+/* Workout Plan Page */
+.workout-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-xl);
+  margin-bottom: var(--space-xl);
+}
+
+.workout-hero-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.workout-hero-icon {
+  font-size: 2rem;
+}
+
+.workout-hero-day {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.workout-hero-name {
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+/* Cardio */
+.workout-cardio {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.workout-cardio-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.workout-cardio-item span:first-child {
+  font-size: 1.3rem;
+}
+
+.workout-cardio-item > div {
+  flex: 1;
+}
+
+.workout-steps-input {
+  width: 90px;
+  padding: var(--space-sm) var(--space-md);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* Complete Banner */
+.workout-complete-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  background: var(--accent-green-dim);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  color: var(--accent-green);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-top: var(--space-xl);
+  box-shadow: var(--shadow-glow-green);
+}
+
+.workout-complete-banner span:first-child {
+  font-size: 1.3rem;
+}

@@ -1,0 +1,160 @@
+/* Progress Page */
+.progress-stat-mini {
+  padding: var(--space-lg);
+  text-align: center;
+}
+
+.psm-val {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--accent-green);
+  letter-spacing: -0.02em;
+}
+
+.psm-sub {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.psm-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 4px;
+}
+
+/* Charts */
+.progress-chart-card {
+  margin-bottom: var(--space-md);
+  padding: var(--space-lg) var(--space-md);
+}
+
+.progress-chart-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+}
+
+.chart-tooltip {
+  background: var(--bg-card);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-sm);
+  padding: 4px 8px;
+}
+
+.chart-tooltip-label {
+  font-size: 0.6rem;
+  color: var(--text-muted);
+}
+
+.chart-tooltip-val {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* Heatmap */
+.heatmap-card {
+  padding: var(--space-lg);
+}
+
+.heatmap-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 3px;
+  margin-bottom: var(--space-md);
+}
+
+.heatmap-cell {
+  aspect-ratio: 1;
+  border-radius: 3px;
+  min-width: 0;
+}
+
+.heatmap-cell--empty {
+  background: var(--bg-elevated);
+}
+
+.heatmap-cell--partial {
+  background: rgba(245, 158, 11, 0.4);
+}
+
+.heatmap-cell--completed {
+  background: var(--accent-green);
+  box-shadow: 0 0 4px rgba(34, 197, 94, 0.3);
+}
+
+.heatmap-legend {
+  display: flex;
+  gap: var(--space-lg);
+  justify-content: center;
+}
+
+.heatmap-legend span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.heatmap-legend .heatmap-cell {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+}
+
+/* Weekly */
+.weekly-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.weekly-item {
+  padding: var(--space-md) var(--space-lg);
+}
+
+.weekly-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-sm);
+}
+
+.weekly-num {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.weekly-bar {
+  width: 100%;
+  height: 4px;
+  border-radius: var(--radius-full);
+  background: var(--bg-elevated);
+  margin-bottom: var(--space-xs);
+  overflow: hidden;
+}
+
+.weekly-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  background: var(--accent-green);
+  transition: width 0.5s ease;
+}
+
+.best-week-badge {
+  text-align: center;
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 215, 0, 0.08);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  color: #ffd700;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: var(--space-xl);
+}
