@@ -8,11 +8,20 @@
     <meta name="description" content="FitTrack — Premium personal fitness tracker for diet, workouts, and progress." />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="manifest" href="/gymscheduler/manifest.json" />
     <title>FitTrack — Fitness Tracker</title>
-    <script type="module" crossorigin src="/gymscheduler/assets/index-72YUrRD_.js"></script>
-    <link rel="stylesheet" crossorigin href="/gymscheduler/assets/index-BEZudDeu.css">
+    <script type="module" crossorigin src="/gymscheduler/assets/index-CI10Evps.js"></script>
+    <link rel="stylesheet" crossorigin href="/gymscheduler/assets/index-Lf1qBSAh.css">
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      // Register Service Worker for PWA
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/gymscheduler/sw.js').catch(() => {});
+        });
+      }
+    </script>
   </body>
 </html>
